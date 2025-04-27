@@ -3,7 +3,7 @@
       "id": "ponto1",
       "title": "Imigração Italiana",
       "description": "Este ponto marca a história dos imigrantes italianos que chegaram a Erechim no início do século XX, trazendo sua rica cultura, gastronomia e tradições.",
-      "image": "assets/images/imigracao-italiana.jpg",
+      "image": "assets/images/italia1.jpg",
       "culturalInfo": "Os italianos foram um dos grupos mais numerosos a se estabelecerem na região, contribuindo significativamente para a arquitetura local, gastronomia e tradições religiosas.",
       "location": {"lat": -27.6341, "lng": -52.2693},
       "hasInteraction": true,
