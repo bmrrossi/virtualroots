@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Codes para Teste - Parque Longines Malinowski</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; padding: 20px; max-width: 1200px; margin: 0 auto; }
+        h1 { text-align: center; margin-bottom: 30px; color: #2c3e50; }
+        .qr-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        .qr-item { background-color: white; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); 
+                   padding: 15px; text-align: center; break-inside: avoid; }
+        .qr-item h3 { margin: 0 0 15px 0; font-size: 16px; color: #2c3e50; }
+        .print-btn { background: #3498db; color: white; border: none; padding: 12px 24px; font-size: 16px; 
+                    border-radius: 5px; cursor: pointer; display: block; margin: 30px auto; }
+        @media print {
+            .no-print { display: none; }
+            .qr-grid { grid-template-columns: repeat(3, 1fr); }
+            body { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="no-print">QR Codes para Teste - Parque Longines Malinowski</h1>
+    <button onclick="window.print()" class="print-btn no-print">Imprimir QR Codes</button>
+    
+    <div class="qr-grid">
+        <!-- Europa -->
+        <div class="qr-item">
+            <h3>Ponto 1: Imigração Italiana</h3>
+            <div id="qrcode1"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 2: Herança Alemã</h3>
+            <div id="qrcode2"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 3: Influência Polonesa</h3>
+            <div id="qrcode3"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 4: Presença Portuguesa</h3>
+            <div id="qrcode4"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 5: Comunidade Ucraniana</h3>
+            <div id="qrcode5"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 6: Legado Austríaco</h3>
+            <div id="qrcode6"></div>
+        </div>
+        
+        <!-- Gastronomia -->
+        <div class="qr-item">
+            <h3>Ponto 7: Restaurante Intercultural</h3>
+            <div id="qrcode7"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 8: Feira de Produtos Típicos</h3>
+            <div id="qrcode8"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 9: Festival Gastronômico</h3>
+            <div id="qrcode9"></div>
+        </div>
+        
+        <!-- Arquitetura -->
+        <div class="qr-item">
+            <h3>Ponto 10: Arquitetura Europeia</h3>
+            <div id="qrcode10"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 11: Monumentos da Imigração</h3>
+            <div id="qrcode11"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 12: Centro Cultural</h3>
+            <div id="qrcode12"></div>
+        </div>
+        
+        <!-- Arte e Música -->
+        <div class="qr-item">
+            <h3>Ponto 13: Espaço Musical</h3>
+            <div id="qrcode13"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 14: Galeria de Arte</h3>
+            <div id="qrcode14"></div>
+        </div>
+        
+        <!-- América Latina -->
+        <div class="qr-item">
+            <h3>Ponto 15: Imigração Venezuelana</h3>
+            <div id="qrcode15"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 16: Comunidade Haitiana</h3>
+            <div id="qrcode16"></div>
+        </div>
+        
+        <!-- Fusões Culturais -->
+        <div class="qr-item">
+            <h3>Ponto 17: Festival Intercultural</h3>
+            <div id="qrcode17"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 18: Centro de Línguas</h3>
+            <div id="qrcode18"></div>
+        </div>
+        
+        <!-- Conclusão -->
+        <div class="qr-item">
+            <h3>Ponto 19: Memorial da Diversidade</h3>
+            <div id="qrcode19"></div>
+        </div>
+        
+        <div class="qr-item">
+            <h3>Ponto 20: Praça das Nações</h3>
+            <div id="qrcode20"></div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Criar QRCodes para todos os 20 pontos
+            for (let i = 1; i <= 20; i++) {
+                new QRCode(document.getElementById(`qrcode${i}`), {
+                    text: `ponto${i}`,
+                    width: 128,
+                    height: 128,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff"
+                });
+            }
+        });
+    </script>
+</body>
+</html>

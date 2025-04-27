@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self'">
     <title>Raízes Virtuais - Parque Longines Malinowski</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,6 +12,8 @@
         <h1>Raízes Virtuais</h1>
         <div class="player-info">
             <span id="player-score">0</span> pontos
+            <button id="show-badges" class="icon-btn"><img src="assets/images/badge-icon.svg" alt="Badges"></button>
+            <button id="show-ranking" class="icon-btn"><img src="assets/images/ranking-icon.svg" alt="Ranking"></button>
         </div>
     </header>
 
@@ -19,6 +22,12 @@
             <h2>Bem-vindo ao Parque Longines Malinowski</h2>
             <p>Explore o parque e descubra a riqueza cultural da imigração em Erechim através deste jogo de realidade aumentada.</p>
             <p>Procure por QR codes espalhados pelo parque e escaneie para descobrir histórias fascinantes!</p>
+            
+            <div class="player-setup">
+                <label for="player-name">Seu nome:</label>
+                <input type="text" id="player-name" placeholder="Digite seu nome">
+            </div>
+            
             <button id="start-scan" class="primary-btn">Começar Exploração</button>
         </div>
 
@@ -30,13 +39,22 @@
         </div>
 
         <div id="content-display" class="screen"></div>
+        
+        <div id="quiz-container" class="quiz-screen"></div>
+        
+        <div id="badges-display" class="overlay-screen"></div>
+        
+        <div id="ranking-display" class="overlay-screen"></div>
 
         <div id="progress-container">
             <div id="progress-bar"></div>
             <span id="progress-text">0 de 0 pontos descobertos</span>
         </div>
     </main>
+    
+    <div id="notification" class="notification hidden"></div>
 
     <script type="module" src="js/qrscanner.js"></script>
+    <script type="module" src="js/quiz.js"></script>
 </body>
 </html>
