@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raízes Virtuais - Parque Longines Malinowski</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Raízes Virtuais</h1>
+        <div class="player-info">
+            <span id="player-score">0</span> pontos
+        </div>
+    </header>
+
+    <main>
+        <div id="intro-screen" class="screen">
+            <h2>Bem-vindo ao Parque Longines Malinowski</h2>
+            <p>Explore o parque e descubra a riqueza cultural da imigração em Erechim através deste jogo de realidade aumentada.</p>
+            <p>Procure por QR codes espalhados pelo parque e escaneie para descobrir histórias fascinantes!</p>
+            <button id="start-scan" class="primary-btn">Começar Exploração</button>
+        </div>
+
+        <div id="scanner-overlay" class="screen">
+            <video id="qr-video"></video>
+            <div class="scan-indicator">
+                <p>Aponte para um QR code</p>
+            </div>
+        </div>
+
+        <div id="content-display" class="screen"></div>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <span id="progress-text">0 de 0 pontos descobertos</span>
+        </div>
+    </main>
+
+    <script type="module" src="js/qrscanner.js"></script>
+</body>
+</html>

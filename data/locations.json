@@ -1,0 +1,48 @@
+[
+    {
+      "id": "ponto1",
+      "title": "Imigração Italiana",
+      "description": "Este ponto marca a história dos imigrantes italianos que chegaram a Erechim no início do século XX, trazendo sua rica cultura, gastronomia e tradições.",
+      "image": "assets/images/imigracao-italiana.jpg",
+      "culturalInfo": "Os italianos foram um dos grupos mais numerosos a se estabelecerem na região, contribuindo significativamente para a arquitetura local, gastronomia e tradições religiosas.",
+      "location": {"lat": -27.6341, "lng": -52.2693},
+      "hasInteraction": true,
+      "quiz": {
+        "question": "Qual prato típico italiano se tornou parte da culinária local?",
+        "options": ["Polenta", "Sushi", "Tacos", "Hamburger"],
+        "correctAnswer": 0,
+        "explanation": "A polenta se tornou um alimento básico na região, sendo incorporada à culinária local com variações únicas."
+      }
+    },
+    {
+      "id": "ponto2",
+      "title": "Herança Alemã",
+      "description": "Os imigrantes alemães trouxeram técnicas avançadas de agricultura e contribuíram para o desenvolvimento econômico da região.",
+      "image": "assets/images/heranca-alema.jpg",
+      "culturalInfo": "A comunidade alemã estabeleceu escolas, sociedades recreativas e manteve vivas tradições como a Oktoberfest, que ainda são celebradas na região.",
+      "location": {"lat": -27.6338, "lng": -52.2702},
+      "hasInteraction": true,
+      "quiz": {
+        "question": "Qual festividade alemã é celebrada anualmente na região?",
+        "options": ["Carnaval", "Oktoberfest", "São João", "Festival de Jazz"],
+        "correctAnswer": 1,
+        "explanation": "A Oktoberfest é uma celebração da cultura alemã que se tornou importante no calendário cultural da cidade."
+      }
+    },
+    {
+      "id": "ponto3",
+      "title": "Influência Polonesa",
+      "description": "A comunidade polonesa trouxe suas tradições, música e arte para a região de Erechim, enriquecendo o mosaico cultural da cidade.",
+      "image": "assets/images/influencia-polonesa.jpg",
+      "culturalInfo": "Os poloneses preservaram sua identidade através da música, danças folclóricas e celebrações religiosas específicas que se fundiram à cultura local.",
+      "location": {"lat": -27.6352, "lng": -52.2681},
+      "hasInteraction": true,
+      "quiz": {
+        "question": "Qual destes instrumentos é característico da música folclórica polonesa?",
+        "options": ["Banjo", "Acordeão", "Guitarra elétrica", "Djembe"],
+        "correctAnswer": 1,
+        "explanation": "O acordeão é um instrumento fundamental na música folclórica polonesa e foi trazido pelos imigrantes para a região."
+      }
+    }
+  ]
+  
