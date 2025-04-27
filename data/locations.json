@@ -1,157 +1,54 @@
+// locations.json (versão expandida)
 [
     {
-      "id": "quiz1",
-      "title": "Origens Europeias",
-      "description": "Teste seus conhecimentos sobre os imigrantes europeus que formaram Erechim.",
-      "questions": [
-        {
-          "question": "Qual grupo de imigrantes construiu as primeiras vinícolas na região de Erechim?",
-          "options": ["Alemães", "Italianos", "Poloneses", "Portugueses"],
-          "correctAnswer": 1,
-          "explanation": "Os imigrantes italianos trouxeram sua tradição vinícola para a região, estabelecendo as primeiras vinícolas que até hoje são parte importante da economia local."
-        },
-        {
-          "question": "Qual destas festividades foi trazida pelos imigrantes alemães?",
-          "options": ["Festa Junina", "Festa da Colheita (Erntedankfest)", "Carnaval", "Folia de Reis"],
-          "correctAnswer": 1,
-          "explanation": "A Festa da Colheita (Erntedankfest) é uma celebração tradicional alemã de agradecimento pela colheita, mantida pelos descendentes na região."
-        },
-        {
-          "question": "Qual artesanato é tradicionalmente associado aos imigrantes poloneses em Erechim?",
-          "options": ["Esculturas em madeira", "Pisanki - ovos decorados", "Tapeçaria", "Cerâmica esmaltada"],
-          "correctAnswer": 1,
-          "explanation": "O Pisanki, arte de decorar ovos com padrões coloridos e símbolos, é uma tradição polonesa que continua sendo praticada pelos descendentes na região."
-        }
-      ],
-      "badge": {
-        "id": "european-heritage",
-        "name": "Guardião das Tradições Europeias",
-        "description": "Você demonstrou conhecimento sobre as raízes europeias que formaram a cultura de Erechim.",
-        "image": "assets/images/badges/european-badge.png"
+      "id": "ponto1",
+      "title": "Imigração Italiana",
+      "description": "Este ponto marca a história dos imigrantes italianos que chegaram a Erechim no início do século XX, trazendo sua rica cultura, gastronomia e tradições.",
+      "image": "assets/images/imigracao-italiana.jpg",
+      "culturalInfo": "Os italianos foram um dos grupos mais numerosos a se estabelecerem na região, contribuindo significativamente para a arquitetura local, gastronomia e tradições religiosas.",
+      "location": {"lat": -27.6341, "lng": -52.2693},
+      "category": "europa",
+      "hasInteraction": true,
+      "quiz": {
+        "question": "Qual prato típico italiano se tornou parte da culinária local?",
+        "options": ["Polenta", "Sushi", "Tacos", "Hamburger"],
+        "correctAnswer": 0,
+        "explanation": "A polenta se tornou um alimento básico na região, sendo incorporada à culinária local com variações únicas."
+      }
+    },
+    
+    // Pontos adicionais seriam inseridos aqui...
+    
+    {
+      "id": "ponto15",
+      "title": "Imigração Venezuelana",
+      "description": "Desde 2015, Erechim recebeu um fluxo crescente de imigrantes venezuelanos que buscaram novas oportunidades devido à crise econômica e política em seu país.",
+      "image": "assets/images/imigracao-venezuelana.jpg",
+      "culturalInfo": "A comunidade venezuelana trouxe sua culinária, tradições e música, enriquecendo o cenário cultural local com festividades como o Dia de la Chinita.",
+      "location": {"lat": -27.6355, "lng": -52.2705},
+      "category": "america-latina",
+      "hasInteraction": true,
+      "quiz": {
+        "question": "Qual é o prato nacional da Venezuela que começa a se popularizar em Erechim?",
+        "options": ["Arepa", "Tacos", "Ceviche", "Feijoada"],
+        "correctAnswer": 0,
+        "explanation": "As arepas são pastéis de milho recheados que formam parte essencial da identidade culinária venezuelana."
       }
     },
     {
-      "id": "quiz2",
-      "title": "Influências Culturais",
-      "description": "Descubra como diferentes culturas moldaram a identidade de Erechim.",
-      "questions": [
-        {
-          "question": "Qual traço arquitetônico foi fortemente influenciado pelos imigrantes italianos?",
-          "options": ["Casas de madeira com varandas amplas", "Construções em enxaimel", "Casas com porões para produção de vinho", "Edifícios modernistas"],
-          "correctAnswer": 2,
-          "explanation": "As casas com porões para a produção e armazenamento de vinhos são um traço característico da arquitetura dos imigrantes italianos na região."
-        },
-        {
-          "question": "Que instrumento musical foi popularizado pelos imigrantes poloneses?",
-          "options": ["Sanfona", "Violino", "Gaita de foles", "Acordeão"],
-          "correctAnswer": 3,
-          "explanation": "O acordeão foi trazido pelos imigrantes poloneses e se tornou parte fundamental da música tradicional da região."
-        },
-        {
-          "question": "Qual religião foi predominantemente trazida pelos imigrantes alemães?",
-          "options": ["Catolicismo", "Luteranismo", "Ortodoxia", "Judaísmo"],
-          "correctAnswer": 1,
-          "explanation": "O luteranismo foi trazido principalmente pelos imigrantes alemães, estabelecendo diversas igrejas luteranas que existem até hoje na região."
-        }
-      ],
-      "badge": {
-        "id": "cultural-influence",
-        "name": "Mestre das Influências Culturais",
-        "description": "Você compreende como diferentes culturas se entrelaçaram para formar a identidade única de Erechim.",
-        "image": "assets/images/badges/cultural-badge.png"
-      }
-    },
-    {
-      "id": "quiz3",
-      "title": "Gastronomia Intercultural",
-      "description": "Explore os sabores trazidos pelos diferentes povos que habitam Erechim.",
-      "questions": [
-        {
-          "question": "Qual prato é resultado da fusão da culinária italiana com ingredientes locais?",
-          "options": ["Polenta com galinha", "Lasanha de pinhão", "Risoto de charque", "Todas as alternativas"],
-          "correctAnswer": 3,
-          "explanation": "Todos estes pratos representam adaptações da culinária italiana com ingredientes tipicamente brasileiros e gaúchos."
-        },
-        {
-          "question": "Qual doce é tradicionalmente preparado pela comunidade alemã durante festividades?",
-          "options": ["Küchen (bolo de frutas)", "Brigadeiro", "Alfajor", "Pudim de leite"],
-          "correctAnswer": 0,
-          "explanation": "O Küchen é um tradicional bolo de frutas alemão que é preparado especialmente em celebrações familiares e festividades comunitárias."
-        },
-        {
-          "question": "Qual bebida os imigrantes poloneses introduziram na região?",
-          "options": ["Cerveja de trigo", "Vinho tinto", "Nalewka (licor de frutas)", "Chimarrão"],
-          "correctAnswer": 2,
-          "explanation": "Nalewka é um licor tradicional polonês feito com frutas, ervas ou especiarias, trazido pelos imigrantes e ainda produzido artesanalmente na região."
-        }
-      ],
-      "badge": {
-        "id": "gastronomy-expert",
-        "name": "Chef Intercultural",
-        "description": "Você conhece os segredos e histórias por trás da diversa gastronomia de Erechim.",
-        "image": "assets/images/badges/gastronomy-badge.png"
-      }
-    },
-    {
-      "id": "quiz4",
-      "title": "Migrações Contemporâneas",
-      "description": "Teste seus conhecimentos sobre os novos fluxos migratórios para Erechim.",
-      "questions": [
-        {
-          "question": "Qual evento acelerou a imigração haitiana para Erechim?",
-          "options": ["Guerra civil", "Furacão Matthew", "Terremoto de 2010", "Crise econômica"],
-          "correctAnswer": 2,
-          "explanation": "O devastador terremoto de 2010 no Haiti causou uma diáspora de haitianos, muitos dos quais encontraram em Erechim um novo lar."
-        },
-        {
-          "question": "Qual área profissional concentra grande parte dos imigrantes venezuelanos em Erechim?",
-          "options": ["Agricultura", "Construção civil", "Saúde", "Educação"],
-          "correctAnswer": 2,
-          "explanation": "Muitos venezuelanos que migraram para Erechim são profissionais de saúde, incluindo médicos e enfermeiros, que ajudam a suprir a demanda local por esses profissionais."
-        },
-        {
-          "question": "Qual celebração cultural haitiana começou a fazer parte do calendário de eventos de Erechim?",
-          "options": ["Dia da Bandeira Haitiana", "Carnaval de Porto Príncipe", "Festa da Independência", "Celebração de Bwa Kayiman"],
-          "correctAnswer": 0,
-          "explanation": "O Dia da Bandeira Haitiana (18 de maio) passou a ser celebrado pela comunidade haitiana de Erechim, compartilhando sua cultura com os moradores locais."
-        }
-      ],
-      "badge": {
-        "id": "contemporary-migrations",
-        "name": "Embaixador da Diversidade",
-        "description": "Você compreende as migrações contemporâneas e seu impacto na comunidade de Erechim.",
-        "image": "assets/images/badges/diversity-badge.png"
-      }
-    },
-    {
-      "id": "quiz5",
-      "title": "Fusões Culturais",
-      "description": "Descubra como as diferentes culturas se misturaram e criaram expressões únicas em Erechim.",
-      "questions": [
-        {
-          "question": "Qual festival representa a fusão de tradições europeias e latino-americanas em Erechim?",
-          "options": ["FestItália", "MultiCultura", "FestiPaz", "Dança das Nações"],
-          "correctAnswer": 3,
-          "explanation": "O festival Dança das Nações surgiu como uma celebração intercultural que integra apresentações de danças tradicionais de todos os grupos migratórios da cidade."
-        },
-        {
-          "question": "Qual expressão artística contemporânea em Erechim mistura influências de imigrantes tradicionais e recentes?",
-          "options": ["Murais urbanos interculturais", "Ópera folclórica", "Cinema experimental", "Literatura fantástica"],
-          "correctAnswer": 0,
-          "explanation": "Os murais urbanos interculturais são um movimento artístico que incorpora elementos visuais das diversas culturas presentes em Erechim, tanto europeias quanto latino-americanas e caribenhas."
-        },
-        {
-          "question": "Que novo ritmo musical surgiu da fusão entre músicos locais e imigrantes latino-americanos?",
-          "options": ["Vanerão Tropical", "Folk Andino", "Samba Gaucho", "Cumbia Serrana"],
-          "correctAnswer": 3,
-          "explanation": "A Cumbia Serrana é um gênero musical que surgiu da fusão entre a cumbia colombiana/venezuelana e elementos da música gaúcha, criando um ritmo único na região."
-        }
-      ],
-      "badge": {
-        "id": "cultural-fusion",
-        "name": "Mestre das Fusões Culturais",
-        "description": "Você reconhece como diferentes culturas se misturam para criar novas expressões únicas em Erechim.",
-        "image": "assets/images/badges/fusion-badge.png"
+      "id": "ponto16",
+      "title": "Comunidade Haitiana",
+      "description": "Após o terremoto de 2010, muitos haitianos escolheram Erechim como novo lar, trazendo sua forte identidade cultural.",
+      "image": "assets/images/comunidade-haitiana.jpg", 
+      "culturalInfo": "Os haitianos trouxeram sua música vibrante, arte, culinária e uma língua crioula única que enriquece a diversidade linguística da região.",
+      "location": {"lat": -27.6360, "lng": -52.2715},
+      "category": "caribe",
+      "hasInteraction": true,
+      "quiz": {
+        "question": "Além do francês, qual idioma é falado pela maioria dos imigrantes haitianos?",
+        "options": ["Espanhol", "Inglês", "Crioulo haitiano", "Português"],
+        "correctAnswer": 2,
+        "explanation": "O crioulo haitiano é a língua materna da maioria dos haitianos e continua sendo utilizado em sua comunidade em Erechim."
       }
     }
   ]
