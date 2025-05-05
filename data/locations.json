@@ -1,10 +1,10 @@
 [
     {
       "id": "ponto1",
-      "title": "Imigração Italiana",
+      "title": "Imigração Italiana - Ponto 1",
       "description": "Este ponto marca a história dos imigrantes italianos que chegaram a Erechim no início do século XX, trazendo sua rica cultura, gastronomia e tradições.",
       "image": "assets/images/italia1.jpg",
-      "has3DModel": true,
+      "has3DModel": false,
       "modelPath": "assets/models/cafeteira_italiana.glb",
       "culturalInfo": "Os italianos foram um dos grupos mais numerosos a se estabelecerem na região, contribuindo significativamente para a arquitetura local, gastronomia e tradições religiosas.",
       "location": { "lat": -27.63450, "lng": -52.26500 },
@@ -18,7 +18,7 @@
     },
     {
       "id": "ponto2",
-      "title": "Herança Alemã",
+      "title": "Herança Alemã - Ponto 2",
       "description": "Os imigrantes alemães trouxeram técnicas avançadas de agricultura e contribuíram para o desenvolvimento econômico da região.",
       "image": "assets/images/alema1.jpg",
       "has3DModel": true,
@@ -35,7 +35,7 @@
     },
     {
       "id": "ponto3",
-      "title": "Influência Polonesa",
+      "title": "Influência Polonesa - Ponto 3",
       "description": "A comunidade polonesa trouxe suas tradições, música e arte para a região de Erechim, enriquecendo o mosaico cultural da cidade.",
       "image": "assets/images/polonia1.jpg",
       "culturalInfo": "Os poloneses preservaram sua identidade através da música, danças folclóricas e celebrações religiosas específicas que se fundiram à cultura local.",
@@ -50,7 +50,7 @@
     },
   {
     "id": "ponto4",
-    "title": "Imigração Israelita",
+    "title": "Imigração Israelita - Ponto 4",
     "description": "A história dos judeus que se estabeleceram em Erechim, trazendo suas tradições e valores culturais.",
     "image": "assets/images/israel1.jpg",
     "culturalInfo": "A comunidade israelita contribuiu para o comércio local e trouxe festividades como o Hanukkah, promovendo diversidade cultural.",
