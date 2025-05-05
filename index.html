@@ -6,10 +6,24 @@
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self'">
     <title>Raízes Virtuais - Parque Longines Malinowski</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.min.js"></script>
+    
 </head>
 <body>
     <header>
-        <h1>Raízes Virtuais</h1>
+        <h2>Raízes Virtuais</h2>
         <div class="player-info">
             <span id="player-score">0</span> pontos
             <button id="show-badges" class="icon-btn"><img src="assets/images/badge-icon.svg" alt="Badges"></button>
@@ -27,8 +41,25 @@
                 <label for="player-name">Seu nome:</label>
                 <input type="text" id="player-name" placeholder="Digite seu nome">
             </div>
+
+            <div class="social-login">
+                <button class="social-btn google-btn">
+                    <img src="assets/icons/google.svg" alt="Google Icon">
+                    Entrar com Google
+                </button>
+                <button class="social-btn facebook-btn">
+                    <img src="assets/icons/facebook.svg" alt="Facebook Icon">
+                    Entrar com Facebook
+                </button>
+            </div>
             
             <button id="start-scan" class="primary-btn">Começar Exploração</button>
+        </div>
+
+
+        <div id="map-screen" class="screen">
+            <div id="map"></div>
+            <button id="start-camera" class="primary-btn">Iniciar Scanner</button>
         </div>
 
         <div id="scanner-overlay" class="screen">
@@ -39,12 +70,14 @@
         </div>
 
         <div id="content-display" class="screen"></div>
-        
+
         <div id="quiz-container" class="quiz-screen"></div>
         
         <div id="badges-display" class="overlay-screen"></div>
         
         <div id="ranking-display" class="overlay-screen"></div>
+
+        <div id="ar-container" class="screen hidden"></div>
 
         <div id="progress-container">
             <div id="progress-bar"></div>
@@ -54,7 +87,7 @@
     
     <div id="notification" class="notification hidden"></div>
 
-    <script type="module" src="js/qrscanner.js"></script>
-    <script type="module" src="js/quiz.js"></script>
+    <script type="module" src="js/qrscanner.js"></script> 
+
 </body>
 </html>

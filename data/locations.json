@@ -1,13 +1,13 @@
-// locations.json (versão expandida)
 [
     {
       "id": "ponto1",
       "title": "Imigração Italiana",
       "description": "Este ponto marca a história dos imigrantes italianos que chegaram a Erechim no início do século XX, trazendo sua rica cultura, gastronomia e tradições.",
-      "image": "assets/images/imigracao-italiana.jpg",
+      "image": "assets/images/italia1.jpg",
+      "has3DModel": true,
+      "modelPath": "assets/models/cafeteira_italiana.glb",
       "culturalInfo": "Os italianos foram um dos grupos mais numerosos a se estabelecerem na região, contribuindo significativamente para a arquitetura local, gastronomia e tradições religiosas.",
-      "location": {"lat": -27.6341, "lng": -52.2693},
-      "category": "europa",
+      "location": { "lat": -27.63450, "lng": -52.26500 },
       "hasInteraction": true,
       "quiz": {
         "question": "Qual prato típico italiano se tornou parte da culinária local?",
@@ -16,40 +16,142 @@
         "explanation": "A polenta se tornou um alimento básico na região, sendo incorporada à culinária local com variações únicas."
       }
     },
-    
-    // Pontos adicionais seriam inseridos aqui...
-    
     {
-      "id": "ponto15",
-      "title": "Imigração Venezuelana",
-      "description": "Desde 2015, Erechim recebeu um fluxo crescente de imigrantes venezuelanos que buscaram novas oportunidades devido à crise econômica e política em seu país.",
-      "image": "assets/images/imigracao-venezuelana.jpg",
-      "culturalInfo": "A comunidade venezuelana trouxe sua culinária, tradições e música, enriquecendo o cenário cultural local com festividades como o Dia de la Chinita.",
-      "location": {"lat": -27.6355, "lng": -52.2705},
-      "category": "america-latina",
+      "id": "ponto2",
+      "title": "Herança Alemã",
+      "description": "Os imigrantes alemães trouxeram técnicas avançadas de agricultura e contribuíram para o desenvolvimento econômico da região.",
+      "image": "assets/images/alema1.jpg",
+      "has3DModel": true,
+      "modelPath": "assets/models/tambor_africano.glb",
+      "culturalInfo": "A comunidade alemã estabeleceu escolas, sociedades recreativas e manteve vivas tradições como a Oktoberfest, que ainda são celebradas na região.",
+      "location": { "lat": -27.63480, "lng": -52.26550 },
       "hasInteraction": true,
       "quiz": {
-        "question": "Qual é o prato nacional da Venezuela que começa a se popularizar em Erechim?",
-        "options": ["Arepa", "Tacos", "Ceviche", "Feijoada"],
-        "correctAnswer": 0,
-        "explanation": "As arepas são pastéis de milho recheados que formam parte essencial da identidade culinária venezuelana."
+        "question": "Qual festividade alemã é celebrada anualmente na região?",
+        "options": ["Carnaval", "Oktoberfest", "São João", "Festival de Jazz"],
+        "correctAnswer": 1,
+        "explanation": "A Oktoberfest é uma celebração da cultura alemã que se tornou importante no calendário cultural da cidade."
       }
     },
     {
-      "id": "ponto16",
-      "title": "Comunidade Haitiana",
-      "description": "Após o terremoto de 2010, muitos haitianos escolheram Erechim como novo lar, trazendo sua forte identidade cultural.",
-      "image": "assets/images/comunidade-haitiana.jpg", 
-      "culturalInfo": "Os haitianos trouxeram sua música vibrante, arte, culinária e uma língua crioula única que enriquece a diversidade linguística da região.",
-      "location": {"lat": -27.6360, "lng": -52.2715},
-      "category": "caribe",
+      "id": "ponto3",
+      "title": "Influência Polonesa",
+      "description": "A comunidade polonesa trouxe suas tradições, música e arte para a região de Erechim, enriquecendo o mosaico cultural da cidade.",
+      "image": "assets/images/polonia1.jpg",
+      "culturalInfo": "Os poloneses preservaram sua identidade através da música, danças folclóricas e celebrações religiosas específicas que se fundiram à cultura local.",
+      "location": { "lat": -27.63420, "lng": -52.26440 },
       "hasInteraction": true,
       "quiz": {
-        "question": "Além do francês, qual idioma é falado pela maioria dos imigrantes haitianos?",
-        "options": ["Espanhol", "Inglês", "Crioulo haitiano", "Português"],
-        "correctAnswer": 2,
-        "explanation": "O crioulo haitiano é a língua materna da maioria dos haitianos e continua sendo utilizado em sua comunidade em Erechim."
+        "question": "Qual destes instrumentos é característico da música folclórica polonesa?",
+        "options": ["Banjo", "Acordeão", "Guitarra elétrica", "Djembe"],
+        "correctAnswer": 1,
+        "explanation": "O acordeão é um instrumento fundamental na música folclórica polonesa e foi trazido pelos imigrantes para a região."
       }
+    },
+  {
+    "id": "ponto4",
+    "title": "Imigração Israelita",
+    "description": "A história dos judeus que se estabeleceram em Erechim, trazendo suas tradições e valores culturais.",
+    "image": "assets/images/israel1.jpg",
+    "culturalInfo": "A comunidade israelita contribuiu para o comércio local e trouxe festividades como o Hanukkah, promovendo diversidade cultural.",
+    "location": { "lat": -27.63470, "lng": -52.26400 },
+    "hasInteraction": true,
+    "quiz": {
+      "question": "Qual celebração judaica é conhecida pelas luzes?",
+      "options": ["Hanukkah", "Páscoa", "Natal", "Ramadã"],
+      "correctAnswer": 0,
+      "explanation": "Hanukkah é a celebração judaica das luzes, marcada por uma rica tradição cultural."
     }
+  },
+  {
+    "id": "ponto5",
+    "title": "Nativos Indígenas",
+    "description": "Os povos indígenas que habitavam a região antes da chegada dos colonizadores e sua influência na cultura local.",
+    "image": "assets/images/indio1.jpg",
+    "culturalInfo": "Os povos Kaingang e Guarani deixaram um legado cultural imenso, desde artesanato até técnicas de agricultura sustentável.",
+    "location": { "lat": -27.63490, "lng": -52.26430 },
+    "hasInteraction": true,
+    "quiz": {
+      "question": "Qual arte é típica dos povos indígenas da região de Erechim?",
+      "options": ["Cerâmica", "Pintura em óleo", "Escultura em mármore", "Artes digitais"],
+      "correctAnswer": 0,
+      "explanation": "A cerâmica indígena é um legado cultural que reflete a habilidade e criatividade dos povos Kaingang e Guarani."
+    }
+  },
+  {
+    "id": "ponto6",
+    "title": "Imigração Venezuelana",
+    "description": "A chegada dos imigrantes venezuelanos em busca de melhores condições de vida e sua integração na sociedade local.",
+    "image": "assets/images/imigracao-venezuelana.jpg",
+    "culturalInfo": "Os venezuelanos trouxeram sua música animada, como o joropo, e pratos típicos como arepas, que enriquecem a gastronomia local.",
+    "location": { "lat": -27.63510, "lng": -52.26520 },
+    "hasInteraction": true,
+    "quiz": {
+      "question": "Qual prato típico venezuelano foi incorporado à culinária local?",
+      "options": ["Arepas", "Empanadas", "Pizza", "Feijoada"],
+      "correctAnswer": 0,
+      "explanation": "Arepas são um prato típico venezuelano que se tornou popular na região devido à imigração."
+    }
+  },
+  {
+    "id": "ponto7",
+    "title": "Imigração Haitiana",
+    "description": "A contribuição dos imigrantes haitianos para a cultura e economia de Erechim.",
+    "image": "assets/images/haiti1.jpg",
+    "culturalInfo": "Os haitianos trouxeram sua música vibrante, festivais e uma grande influência na construção civil da cidade.",
+    "location": { "lat": -27.63400, "lng": -52.26510 },
+    "hasInteraction": true,
+    "quiz": {
+      "question": "Qual é um dos estilos musicais típicos do Haiti?",
+      "options": ["Kompa", "Samba", "Reggae", "Rock"],
+      "correctAnswer": 0,
+      "explanation": "Kompa é um estilo musical haitiano que reflete a rica cultura do país."
+    }
+  },
+  {
+    "id": "ponto8",
+    "title": "Imigração Portuguesa",
+    "description": "Os portugueses trouxeram sua língua, culinária e festividades religiosas para Erechim.",
+    "image": "assets/images/imigracao-portuguesa.jpg",
+    "culturalInfo": "A influência portuguesa é vista na arquitetura e na celebração de festas como o Dia de Santo Antônio.",
+    "location": { "lat": -27.63520, "lng": -52.26460 },
+    "hasInteraction": true,
+    "quiz": {
+      "question": "Qual prato típico português é conhecido na região?",
+      "options": ["Bacalhau", "Pizza", "Tacos", "Hambúrguer"],
+      "correctAnswer": 0,
+      "explanation": "O bacalhau é um prato tradicional português que se tornou popular na região."
+    }
+  },
+  {
+    "id": "ponto9",
+    "title": "Imigração Espanhola",
+    "description": "Os espanhóis contribuíram para a cultura local com sua música e gastronomia.",
+    "image": "assets/images/imigracao-espanhola.jpg",
+    "culturalInfo": "A paella e a dança flamenca são exemplos das contribuições culturais dos espanhóis na região.",
+    "location": { "lat": -27.63460, "lng": -52.26540 },
+    "hasInteraction": true,
+    "quiz": {
+      "question": "Qual dança é típica da cultura espanhola?",
+      "options": ["Flamenco", "Samba", "Tango", "Hip hop"],
+      "correctAnswer": 0,
+      "explanation": "O flamenco é uma dança tradicional espanhola com raízes profundas na cultura do país."
+    }
+  },
+  {
+    "id": "ponto10",
+    "title": "Imigração Japonesa",
+    "description": "Os japoneses trouxeram sua arte e culinária para Erechim, marcando a região com sua cultura única.",
+    "image": "assets/images/imigracao-japonesa.jpg",
+    "culturalInfo": "A comida japonesa, como sushi e tempurá, é uma das maiores contribuições culturais dos japoneses na região.",
+    "location": { "lat": -27.63500, "lng": -52.26490 },
+    "hasInteraction": true,
+    "quiz": {
+      "question": "Qual prato japonês é popular em Erechim?",
+      "options": ["Sushi", "Pizza", "Feijoada", "Arepas"],
+      "correctAnswer": 0,
+      "explanation": "O sushi é um prato típico japonês que se tornou muito popular na região."
+    }
+  }
   ]
   
