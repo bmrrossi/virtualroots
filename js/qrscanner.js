@@ -181,6 +181,10 @@ class ParkARScanner {
             this.contentDisplay.innerHTML = '';
             document.getElementById('content-display').classList.add('hidden'); // Hide the content display
             document.getElementById('map-screen').classList.remove('hidden'); // Show the map screen
+
+            setTimeout(() => {
+                this.map.invalidateSize(); // Ensure the map renders correctly
+            }, 100);
         
             // Display the next point on the map
             this.displayNextPoint();
